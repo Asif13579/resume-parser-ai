@@ -10,8 +10,10 @@ CONFIG_PATH=r"config.yaml"
 with open (CONFIG_PATH) as file:
     data=yaml.load(file,Loader=yaml.FullLoader)
 
+print("Loading model...")
 # Load model locally
-pipe = pipeline("text2text-generation",model="microsoft/phi-3-mini-4k-instruct")
+pipe = pipeline("text2text-generation",model="google/flan-t5-base")
+print("Model loaded successfully!")
 
 def ats_extractor(resume_data):
     # limit resume length
@@ -42,7 +44,7 @@ JSON FORMAT:
 }}
 
 RESUME:
-{resume_data[:2000]}
+{resume_data[:200]}
 """
     response=pipe(prompt,max_new_tokens=300)
     
