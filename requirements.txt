@@ -1,0 +1,26 @@
+Flask==3.0.2
+pypdf==4.1.0
+transformers
+torch
+sentencepiece
+PyYAML
+
+# Flask==3.0.2
+# pypdf==4.1.0
+# #openai==1.16.2
+# huggingface_hub
+# transformers 
+# torch 
+# accelerate
+
+# Flask==3.0.2
+# pypdf==4.1.0
+# PyYAML==6.0.2
+
+# huggingface_hub==0.32.0
+# transformers==4.51.3
+# torch==2.7.0
+# accelerate==1.6.0
+
+# sentencepiece==0.2.0
+# safetensors==0.5.3
